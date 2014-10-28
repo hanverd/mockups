@@ -6,7 +6,9 @@ Mockups is simple PHP tool for showing image of the website inside one of availa
 
 Sass is used to generate CSS style. If you want to modify styling of or add new device, run below command to watch for changes in `main.scss` file.
 
-  sass --watch main.scss:main.css
+```
+sass --watch main.scss:main.css
+```
 
 ## License
 
