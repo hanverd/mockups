@@ -1,6 +1,6 @@
-# Mockups
+# Preview
 
-Mockups is simple PHP tool for showing image of the website inside one of available devices. It can be useful to test what area of the layout is visible at once on various screen sizes.
+Preview is simple PHP tool for showing image of the website inside one of available devices. It can be useful to test what area of the layout is visible at once on various screen sizes.
 
 ## Changes in styling
 
