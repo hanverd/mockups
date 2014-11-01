@@ -2,12 +2,137 @@
 
 Preview is simple PHP tool for showing image of the website inside one of available devices. It can be useful to test what area of the layout is visible at once on various screen sizes.
 
+## Usage
+
+To add or modify sections to index page, use `config.php` file located in root directory.
+
+```php
+<?php
+
+return [
+  'name' => 'Project Name',
+  'sections' => [
+    [
+      'name' => 'Section Name',
+      'layout' => 'columns',
+      'items' => [
+        [
+          'name' => 'Item Name',
+          'type' => 'file',
+          'url' => '',
+          'icon' => '',
+          'class' => 'done',
+        ],
+      ],
+    ],
+  ],
+];
+```
+
+## Options
+
+There is number of options to configure look and content of index page.
+
+### Global
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><code>name</code></th>
+      <td><code>""</code></td>
+      <td><code>String</code> Project name displayed at the top of index page.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>sections</code></th>
+      <td><code>[]</code></td>
+      <td><code>Array</code> Array of sections containing items.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Section
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><code>name</code></th>
+      <td><code>""</code></td>
+      <td><code>String</code> Name of the section.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>layout</code></th>
+      <td><code>"single"</code></td>
+      <td><code>String</code> Accepts: `"single"` or `"split"`. Split layout shows two columns with items instead of one.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>items</code></th>
+      <td><code>[]</code></td>
+      <td><code>Array</code> Array of items in section.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Item
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Default</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><code>name</code></th>
+      <td><code>""</code></td>
+      <td><code>String</code> Name of the item.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>type</code></th>
+      <td><code>"link"</code></td>
+      <td><code>String</code> Accepts: `"link"`,  `"tablet"`,  `"iphone"` or `"design"`.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>url</code></th>
+      <td><code>""</code></td>
+      <td><code>String</code> Link or relative path to the resouce.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>icon</code></th>
+      <td><code>"file-o"</code></td>
+      <td><code>String</code> Name of one of [Font Awesome](http://fontawesome.io/icons/) icons (should be entered without `fa-` prefix). If `false`, icon is not displayed at all.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>class</code></th>
+      <td><code>""</code></td>
+      <td><code>String</code> CSS class added to item. Available classes: `"done"` (only this one for now).</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Changes in styling
 
 Sass is used to generate CSS style. If you want to modify styling of or add new device, run below command to watch for changes in `main.scss` file.
 
-  sass --watch main.scss:main.css
+```
+sass --watch main.scss:main.css
+```
 
 ## License
 
-Mockups is licensed under MIT License.
+Preview is licensed under MIT License.
