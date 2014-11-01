@@ -1,6 +1,6 @@
 # Preview
 
-Preview is simple PHP tool for showing web project to the client. Thanks to various types of content presentation, it can be used even for showing preview of mobile designs in tablet or phone.
+Preview is simple PHP tool for showing web project to the client. Thanks to various types of content presentation, it can be also used to show preview of mobile designs in tablet or phone.
 
 ![](screenshot.png)
 
@@ -132,6 +132,100 @@ There is number of options to configure look and content of index page.
     </tr>
   </tbody>
 </table>
+
+## Example configuration
+
+Below is example config.php file. The same data was used in listing showed at the top of `readme.md`.
+
+```php
+<?php
+
+return [
+  'name' => 'Project Name',
+  'sections' => [
+    [
+      'name' => 'Designs',
+      'layout' => 'split',
+      'items' => [
+        [
+          'name' => 'Home',
+          'link' => '#',
+          'type' => 'phone',
+          'class' => 'done',
+        ],
+        [
+          'name' => 'About',
+          'link' => '#',
+          'type' => 'phone',
+          'class' => 'done',
+        ],
+        [
+          'name' => 'Blog',
+          'link' => '#',
+          'type' => 'phone',
+          'class' => 'done',
+        ],
+        [
+          'name' => 'Blog &rarr; Single Post',
+          'link' => '#',
+          'type' => 'phone',
+          'class' => 'done',
+        ],
+        [
+          'name' => 'Contact Us',
+          'link' => '#',
+          'type' => 'phone',
+          'class' => 'done',
+        ],
+        [
+          'name' => 'Partnership',
+          'link' => '#',
+          'type' => 'phone',
+          'class' => '',
+        ],
+        [
+          'name' => 'FAQ',
+          'link' => '#',
+          'type' => 'phone',
+          'class' => 'done',
+        ],
+        [
+          'name' => 'Privacy Policy',
+          'link' => '#',
+          'type' => 'phone',
+          'class' => '',
+        ],
+        [
+          'name' => 'Registration',
+          'link' => '#',
+          'type' => 'phone',
+          'class' => 'done',
+        ],
+        [
+          'name' => 'Log in',
+          'link' => '#',
+          'type' => 'phone',
+          'class' => '',
+        ],
+      ],
+    ],
+
+    // Attachments
+    [
+      'name' => 'Attachments',
+      'items' => [
+        [
+          'name' => 'PSD + PNG files',
+          'link' => '#',
+          'type' => 'file',
+          'icon' => 'file-zip-o',
+          'class' => 'done',
+        ],
+      ],
+    ],
+  ],
+];
+```
 
 ## Changes in styling
 
