@@ -18,6 +18,7 @@ return [
       'items' => [
         [
           'name' => 'Item Name',
+          'description' => '',
           'type' => 'file',
           'url' => '',
           'icon' => '',
@@ -72,6 +73,11 @@ There is number of options to configure look and content of index page.
       <th scope="row"><code>name</code></th>
       <td><code>""</code></td>
       <td><code>String</code> Name of the section.</td>
+    </tr>
+    <tr>
+      <th scope="row"><code>description</code></th>
+      <td><code>""</code></td>
+      <td><code>String</code> Optional description for the item.</td>
     </tr>
     <tr>
       <th scope="row"><code>layout</code></th>
