@@ -209,8 +209,6 @@ return [
         ],
       ],
     ],
-
-    // Attachments
     [
       'name' => 'Attachments',
       'items' => [
