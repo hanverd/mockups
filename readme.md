@@ -232,7 +232,7 @@ return [
 Sass is used to generate CSS style. If you want to modify styling of or add new device, run below command to watch for changes in `main.scss` file.
 
 ```
-sass --watch main.scss:main.css
+sass main.scss:main.css --style compressed
 ```
 
 ## License
