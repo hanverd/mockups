@@ -1,12 +1,18 @@
 <?php
 
-$config = array_merge([
+$config = array_merge(array(
   'name' => '',
-  'sections' => [],
-], require('files/config.php'));
+  'sections' => array(),
+), require('config.php'));
 
-if (!isset($_GET['page'])) {
-  $view = 'index';
+switch($_GET['layout']) {
+  case 'design':
+  case 'tablet':
+  case 'phone':
+    $layout = $_GET['layout'];
+    break;
+  default:
+    $layout = 'list';
 }
 
 ?>
@@ -14,6 +20,7 @@ if (!isset($_GET['page'])) {
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -25,10 +32,9 @@ if (!isset($_GET['page'])) {
   </head>
   <body>
 
-    <?php if ($view == 'index') : ?>
+    <?php if ($layout == 'list') : ?>
       <header class="header">
         <h1><?php echo $config['name']; ?></h1>
-        <p>Take a look at your files.</p>
         <ul>
           <li class="missing">Not Yet Started</li>
           <li class="done">Completed</li>
@@ -46,7 +52,20 @@ if (!isset($_GET['page'])) {
           <ul class="<?php echo $section['layout']; ?>">
             <?php foreach ($section['items'] as $item) : ?>
               <li class="<?php echo $item['class']; ?>">
-                <a href="<?php echo $item['link']; ?>"><?php echo $item['name']; ?></a>
+                <?php
+                  $link = $item['type'] == 'link'
+                    ? $item['url']
+                    : '?layout='.$item['type'].'&amp;url='.$item['url'];
+                  $icon = isset($item['icon'])
+                    ? $item['icon']
+                    : 'file-o';
+                ?>
+                <a href="<?php echo $link; ?>">
+                  <?php if ($icon): ?>
+                    <i class="fa fa-<?php echo $icon; ?>"></i>
+                  <?php endif; ?>
+                  <span><?php echo $item['name']; ?></span>
+                </a>
               </li>
             <?php endforeach; ?>
           </ul>
@@ -58,53 +77,37 @@ if (!isset($_GET['page'])) {
       </footer>
     <?php endif; ?>
 
-    <?php if ($view == 'design') : ?>
-      <a href="index.php" class="back">&laquo;</a>
+    <?php if ($layout == 'design') : ?>
+      <a href="<?php echo dirname($_SERVER['REQUEST_URI']); ?>" class="back">&laquo;</a>
 
       <div class="design">
-        <img src="projects/Escape/different.png" alt="">
+        <img src="files/<?php echo $_GET['link']; ?>" alt="">
       </div>
     <?php endif; ?>
 
-    <?php if ($view == 'device') : ?>
+    <?php if ($layout == 'tablet') : ?>
+      <a href="<?php echo dirname($_SERVER['REQUEST_URI']); ?>" class="back">&laquo;</a>
+
       <div class="preview">
         <div class="device">
           <div class="tablet tablet-vertical">
             <div class="screen">
-              <img src="http://placehold.it/1024x2000" alt="">
+              <img src="files/<?php echo $_GET['link']; ?>" alt="">
             </div>
             <div class="home"></div>
           </div>
         </div>
       </div>
+    <?php endif; ?>
 
-      <div class="preview">
-        <div class="device">
-          <div class="tablet tablet-horizontal">
-            <div class="screen">
-              <img src="http://placehold.it/1024x2000" alt="">
-            </div>
-            <div class="home"></div>
-          </div>
-        </div>
-      </div>
+    <?php if ($layout == 'phone') : ?>
+      <a href="<?php echo dirname($_SERVER['REQUEST_URI']); ?>" class="back">&laquo;</a>
 
       <div class="preview">
         <div class="device">
           <div class="phone phone-vertical">
             <div class="screen">
-              <img src="http://placehold.it/1024x2000" alt="">
-            </div>
-            <div class="home"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="preview">
-        <div class="device">
-          <div class="phone phone-horizontal">
-            <div class="screen">
-              <img src="http://placehold.it/1024x2000" alt="">
+              <img src="files/<?php echo $_GET['link']; ?>" alt="">
             </div>
             <div class="home"></div>
           </div>

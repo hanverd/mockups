@@ -137,16 +137,16 @@ a:focus {
       float: right;
       content: "✔";
       padding: 12px; }
-  .list .columns {
+  .list .split {
     margin: 0 -2%; }
-    .list .columns li {
+    .list .split li {
       float: left;
       width: 46%;
       margin: 0 2%; }
   @media (max-width: 768px) {
-    .list .columns {
+    .list .split {
       margin: 0; }
-      .list .columns li {
+      .list .split li {
         float: none;
         width: auto;
         margin: 0; } }

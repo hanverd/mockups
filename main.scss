@@ -253,7 +253,7 @@ a:focus {
     }
   }
 
-  .columns {
+  .split {
     margin: 0 -2%;
 
     li {
@@ -264,7 +264,7 @@ a:focus {
   }
 
   @include breakpoint(phablet) {
-    .columns {
+    .split {
       margin: 0;
 
       li {

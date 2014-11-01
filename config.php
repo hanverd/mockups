@@ -5,13 +5,14 @@ return [
   'sections' => [
     [
       'name' => 'Section Name',
-      'layout' => 'columns',
+      'description' => 'Example description.',
+      'layout' => 'single',
       'items' => [
         [
           'name' => 'Item Name',
           'type' => 'file',
-          'url' => '',
-          'icon' => '',
+          'url' => '#',
+          'icon' => 'file-o',
           'class' => 'done',
         ],
       ],
