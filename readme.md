@@ -192,12 +192,8 @@ return [
 
 ## Changes in styling
 
-Sass is used to generate CSS style. If you want to modify styling of or add new device, run below command to watch for changes in `main.scss` file.
+Sass is used to generate CSS style. If you want to modify look of Preview, run below command after applying changes to `main.scss` file.
 
 ```
 sass main.scss:main.css --style compressed
 ```
-
-## License
-
-Preview is licensed under MIT License.
