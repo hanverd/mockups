@@ -125,7 +125,9 @@ a:focus {
       display: block;
       padding: 12px;
       color: #6a6f75; }
-      .list li a:hover {
+      .list li a i {
+        margin-right: 6px; }
+      .list li a:hover span {
         text-decoration: underline; }
     .list li:nth-child(odd) {
       clear: both; }

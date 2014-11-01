@@ -228,7 +228,11 @@ a:focus {
       padding: 12px;
       color: $color-missing;
 
-      &:hover {
+      i {
+        margin-right: 6px;
+      }
+
+      &:hover span {
         text-decoration: underline;
       }
     }
