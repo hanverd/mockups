@@ -1,6 +1,6 @@
 # Preview
 
-Preview is simple PHP tool for showing image of the website inside one of available devices. It can be useful to test what area of the layout is visible at once on various screen sizes.
+Preview is simple PHP tool for showing web project to the client. Thanks to various types of content presentation, it can be used even for showing preview of mobile designs in tablet or phone.
 
 ![](screenshot.png)
 
