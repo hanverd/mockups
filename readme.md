@@ -84,7 +84,7 @@ There is number of options to configure look and content of index page.
     <tr>
       <th scope="row"><code>layout</code></th>
       <td><code>"single"</code></td>
-      <td><code>String</code> Accepts: `"single"` or `"split"`. Split layout shows two columns with items instead of one.</td>
+      <td><code>String</code> Accepts: <code>"single"</code> or <code>"split"</code>. Split layout shows two columns with items instead of one.</td>
     </tr>
     <tr>
       <th scope="row"><code>items</code></th>
@@ -113,7 +113,7 @@ There is number of options to configure look and content of index page.
     <tr>
       <th scope="row"><code>type</code></th>
       <td><code>"link"</code></td>
-      <td><code>String</code> Accepts: `"link"`,  `"tablet"`,  `"iphone"` or `"design"`.</td>
+      <td><code>String</code> Accepts: <code>"link"</code>,  <code>"tablet"</code>,  <code>"iphone"</code> or <code>"design"</code>.</td>
     </tr>
     <tr>
       <th scope="row"><code>url</code></th>
@@ -123,12 +123,12 @@ There is number of options to configure look and content of index page.
     <tr>
       <th scope="row"><code>icon</code></th>
       <td><code>"file-o"</code></td>
-      <td><code>String</code> Name of one of [Font Awesome](http://fontawesome.io/icons/) icons (should be entered without `fa-` prefix). If `false`, icon is not displayed at all.</td>
+      <td><code>String</code> Name of one of <a href="http://fontawesome.io/icons/">Font Awesome</a> icons (should be entered without <code>fa-</code> prefix). If <code>false</code>, icon is not displayed at all.</td>
     </tr>
     <tr>
       <th scope="row"><code>class</code></th>
       <td><code>""</code></td>
-      <td><code>String</code> CSS class added to item. Available classes: `"done"` (only this one for now).</td>
+      <td><code>String</code> CSS class added to item. Available classes: <code>"done"</code> (only this one for now).</td>
     </tr>
   </tbody>
 </table>
