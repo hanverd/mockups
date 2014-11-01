@@ -159,42 +159,7 @@ return [
           'type' => 'phone',
           'class' => 'done',
         ],
-        [
-          'name' => 'Blog',
-          'url' => '#',
-          'type' => 'phone',
-          'class' => 'done',
-        ],
-        [
-          'name' => 'Blog &rarr; Single Post',
-          'url' => '#',
-          'type' => 'phone',
-          'class' => 'done',
-        ],
-        [
-          'name' => 'Contact Us',
-          'url' => '#',
-          'type' => 'phone',
-          'class' => 'done',
-        ],
-        [
-          'name' => 'Partnership',
-          'url' => '#',
-          'type' => 'phone',
-          'class' => '',
-        ],
-        [
-          'name' => 'FAQ',
-          'url' => '#',
-          'type' => 'phone',
-          'class' => 'done',
-        ],
-        [
-          'name' => 'Privacy Policy',
-          'url' => '#',
-          'type' => 'phone',
-          'class' => '',
-        ],
+        // ...
         [
           'name' => 'Registration',
           'url' => '#',
