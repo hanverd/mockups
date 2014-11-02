@@ -135,7 +135,7 @@ There is number of options to configure look and content of index page.
 
 ## Example configuration
 
-Below is example config.php file. The same data was used in listing showed at the top of `readme.md`.
+Below is example config.php file. The same data was used in screenshot at the top of `readme.md`.
 
 ```php
 <?php
@@ -156,7 +156,6 @@ return [
         [
           'name' => 'About',
           'url' => '#',
-          'type' => 'phone',
           'class' => 'done',
         ],
         // ...
@@ -169,8 +168,6 @@ return [
         [
           'name' => 'Log in',
           'url' => '#',
-          'type' => 'phone',
-          'class' => '',
         ],
       ],
     ],
