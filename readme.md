@@ -150,7 +150,7 @@ return [
         [
           'name' => 'Home',
           'url' => '#',
-          'type' => 'phone',
+          'type' => 'tablet',
           'class' => 'done',
         ],
         [
@@ -177,7 +177,7 @@ return [
         [
           'name' => 'PSD + PNG files',
           'url' => '#',
-          'type' => 'file',
+          'type' => 'link',
           'icon' => 'file-zip-o',
           'class' => 'done',
         ],
