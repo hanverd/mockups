@@ -194,3 +194,14 @@ Sass is used to generate CSS style. If you want to modify look of Preview, run b
 ```
 sass main.scss:main.css --style compressed
 ```
+
+## Deployment
+
+You can easily deploy preview with all the files via (S)FTP using [dploy](https://github.com/LeanMeanFightingMachine/dploy). In root directory of the project, there's `dploy.yaml` file with basic configuration already being added. Just add your remot directory, host, user and password info and you're ready to go!
+
+```
+deploy
+```
+
+For more info, check out [dploy](https://github.com/LeanMeanFightingMachine/dploy) project page.
+
