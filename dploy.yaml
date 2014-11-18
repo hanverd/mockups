@@ -1,0 +1,9 @@
+preview:
+  scheme: 'ftp'
+  host: ''
+  user: ''
+  pass: ''
+  check: true
+  exclude: ['dploy.yaml', '.rev', '.git', '.gitignore', '*.scss', '*.md', '*.png']
+  path:
+    remote: ''
