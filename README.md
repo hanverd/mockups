@@ -135,7 +135,7 @@ There is number of options to configure look and content of index page.
 
 ## Example configuration
 
-Below is example config.php file. The same data was used in listing showed at the top of `readme.md`.
+Below is example config.php file. The same data was used in screenshot at the top of `readme.md`.
 
 ```php
 <?php
@@ -150,51 +150,15 @@ return [
         [
           'name' => 'Home',
           'url' => '#',
-          'type' => 'phone',
+          'type' => 'tablet',
           'class' => 'done',
         ],
         [
           'name' => 'About',
           'url' => '#',
-          'type' => 'phone',
           'class' => 'done',
         ],
-        [
-          'name' => 'Blog',
-          'url' => '#',
-          'type' => 'phone',
-          'class' => 'done',
-        ],
-        [
-          'name' => 'Blog &rarr; Single Post',
-          'url' => '#',
-          'type' => 'phone',
-          'class' => 'done',
-        ],
-        [
-          'name' => 'Contact Us',
-          'url' => '#',
-          'type' => 'phone',
-          'class' => 'done',
-        ],
-        [
-          'name' => 'Partnership',
-          'url' => '#',
-          'type' => 'phone',
-          'class' => '',
-        ],
-        [
-          'name' => 'FAQ',
-          'url' => '#',
-          'type' => 'phone',
-          'class' => 'done',
-        ],
-        [
-          'name' => 'Privacy Policy',
-          'url' => '#',
-          'type' => 'phone',
-          'class' => '',
-        ],
+        // ...
         [
           'name' => 'Registration',
           'url' => '#',
@@ -204,8 +168,6 @@ return [
         [
           'name' => 'Log in',
           'url' => '#',
-          'type' => 'phone',
-          'class' => '',
         ],
       ],
     ],
@@ -215,7 +177,7 @@ return [
         [
           'name' => 'PSD + PNG files',
           'url' => '#',
-          'type' => 'file',
+          'type' => 'link',
           'icon' => 'file-zip-o',
           'class' => 'done',
         ],
@@ -227,7 +189,7 @@ return [
 
 ## Changes in styling
 
-Sass is used to generate CSS style. If you want to modify styling of or add new device, run below command to watch for changes in `main.scss` file.
+Sass is used to generate CSS style. If you want to modify look of Preview, run below command after applying changes to `main.scss` file.
 
 ```
 sass main.scss:main.css --style compressed
