@@ -232,7 +232,3 @@ Sass is used to generate CSS style. If you want to modify styling of or add new 
 ```
 sass main.scss:main.css --style compressed
 ```
-
-## License
-
-Preview is licensed under MIT License.
