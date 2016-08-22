@@ -1,6 +1,6 @@
 # Preview
 
-Preview is simple PHP tool for showing web project to the client. Thanks to various types of content presentation, it can be also used to show preview of mobile designs in tablet or phone.
+Preview is simple PHP tool for showing web project to the client.
 
 ![](screenshot.png)
 
@@ -21,7 +21,6 @@ return [
         [
           'name' => 'Item Name',
           'description' => '',
-          'type' => 'file',
           'url' => '',
           'icon' => '',
           'class' => 'done',
@@ -111,11 +110,6 @@ There is number of options to configure look and content of index page.
       <td><code>String</code> Name of the item.</td>
     </tr>
     <tr>
-      <th scope="row"><code>type</code></th>
-      <td><code>"link"</code></td>
-      <td><code>String</code> Accepts: <code>"link"</code>,  <code>"tablet"</code>,  <code>"iphone"</code> or <code>"design"</code>.</td>
-    </tr>
-    <tr>
       <th scope="row"><code>url</code></th>
       <td><code>""</code></td>
       <td><code>String</code> Link or relative path to the resouce.</td>
@@ -150,7 +144,6 @@ return [
         [
           'name' => 'Home',
           'url' => '#',
-          'type' => 'tablet',
           'class' => 'done',
         ],
         [
@@ -162,7 +155,6 @@ return [
         [
           'name' => 'Registration',
           'url' => '#',
-          'type' => 'phone',
           'class' => 'done',
         ],
         [
@@ -177,7 +169,6 @@ return [
         [
           'name' => 'PSD + PNG files',
           'url' => '#',
-          'type' => 'link',
           'icon' => 'file-zip-o',
           'class' => 'done',
         ],

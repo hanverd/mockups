@@ -10,7 +10,6 @@ return [
       'items' => [
         [
           'name' => 'Item Name',
-          'type' => 'file',
           'url' => '#',
           'icon' => 'file-o',
           'class' => 'done',
