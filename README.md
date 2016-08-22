@@ -185,3 +185,7 @@ Sass is used to generate CSS style. If you want to modify look of Preview, run b
 ```
 sass main.scss:main.css --style compressed
 ```
+
+## License
+
+Preview is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
