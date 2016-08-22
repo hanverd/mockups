@@ -73,7 +73,7 @@ switch($_GET['layout']) {
       <?php endforeach; ?>
 
       <footer class="footer">
-        <p class="thanks"><a href="http://hanverd.com"><img src="logo.png" alt=""></a> Thank you for choosing us!</p>
+        <p class="thanks">Thank you!</p>
       </footer>
     <?php endif; ?>
 
