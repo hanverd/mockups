@@ -47,8 +47,10 @@ $config = array_merge([
       </section>
     <?php endforeach ?>
 
-    <footer class="footer">
-      <p class="thanks">Thank you!</p>
-    </footer>
+    <?php if ($config['footer']): ?>
+      <footer class="footer">
+        <p class="thanks">Thank you!</p>
+      </footer>
+    <?php endif ?>
   </body>
 </html>
